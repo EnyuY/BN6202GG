@@ -1,0 +1,150 @@
+{
+    "ai": {
+        "batch_processing": false,
+        "cache_models": true,
+        "model_optimization": true,
+        "precision": "fp16",
+        "use_cuda": true,
+        "use_tensorrt": true,
+        "warmup_iterations": 10
+    },
+    "camera": {
+        "auto_exposure": true,
+        "auto_focus": true,
+        "backend": "auto",
+        "brightness": 0.5,
+        "buffer_size": 1,
+        "contrast": 0.5,
+        "device_id": 3,
+        "fourcc": "MJPG",
+        "fps": 30,
+        "height": 480,
+        "saturation": 0.5,
+        "width": 640
+    },
+    "display": {
+        "background_color": [
+            0,
+            0,
+            0
+        ],
+        "connection_color": [
+            0,
+            255,
+            255
+        ],
+        "fullscreen": false,
+        "landmark_color": [
+            255,
+            0,
+            0
+        ],
+        "overlay_opacity": 0.8,
+        "show_camera_feed": true,
+        "show_debug_info": false,
+        "show_gesture_info": true,
+        "show_landmarks": true,
+        "show_performance_stats": true,
+        "text_color": [
+            0,
+            255,
+            255
+        ],
+        "text_size": 1.2,
+        "window_position": [
+            200,
+            200
+        ],
+        "window_size": [
+            1024,
+            768
+        ]
+    },
+    "game_controls": {
+        "accelerate": "w",
+        "alt_modifier": false,
+        "boost": "x",
+        "brake": "space",
+        "camera_change": "c",
+        "ctrl_modifier": false,
+        "engine_start": "e",
+        "handbrake": "space",
+        "horn": "h",
+        "lights": "l",
+        "pause": "escape",
+        "reverse": "s",
+        "shift_modifier": false,
+        "steer_left": "a",
+        "steer_right": "d"
+    },
+    "gestures": {
+        "angle_smoothing": 0.6,
+        "confidence_threshold": 0.85,
+        "debounce_time_ms": 100,
+        "fist_threshold": 0.8,
+        "gesture_timeout_ms": 5000,
+        "hand_alignment_tolerance": 0.12,
+        "landmark_smoothing": 0.8,
+        "open_hand_threshold": 0.6,
+        "palm_center_smoothing": 0.7,
+        "stability_frames": 3,
+        "vertical_separation_threshold": 0.08
+    },
+    "logging": {
+        "backup_count": 5,
+        "console_output": true,
+        "debug_logging": false,
+        "error_logging": true,
+        "file_path": "gesture_control.log",
+        "gesture_logging": true,
+        "level": "INFO",
+        "log_format": "%(asctime)s | %(levelname)-8s | %(funcName)-20s | %(message)s",
+        "max_file_size_mb": 50,
+        "performance_logging": true
+    },
+    "mediapipe": {
+        "max_num_hands": 2,
+        "min_detection_confidence": 0.7,
+        "min_tracking_confidence": 0.5,
+        "model_complexity": 1,
+        "refine_landmarks": true,
+        "static_image_mode": false
+    },
+    "monitoring": {
+        "alert_thresholds": {
+            "cpu_max_percent": 85.0,
+            "fps_min": 25.0,
+            "gpu_temp_max_celsius": 85.0,
+            "latency_max_ms": 50.0,
+            "memory_max_percent": 90.0
+        },
+        "enable_performance_monitoring": true,
+        "monitoring_interval": 1.0,
+        "performance_log_interval": 60,
+        "save_performance_logs": true
+    },
+    "performance": {
+        "cpu_cores": -1,
+        "enable_gpu_acceleration": true,
+        "enable_profiling": false,
+        "frame_skip_threshold": 2,
+        "garbage_collection_interval": 100,
+        "max_fps": 60,
+        "memory_optimization": true,
+        "priority_class": "high",
+        "target_latency_ms": 25,
+        "thread_count": -1,
+        "threading_enabled": true
+    },
+    "safety": {
+        "auto_brake_on_no_hands": true,
+        "emergency_key": "escape",
+        "enable_emergency_stop": true,
+        "gesture_loss_timeout_ms": 1000,
+        "hand_distance_max": 0.8,
+        "hand_distance_min": 0.1,
+        "max_continuous_action_time": 30,
+        "require_both_hands": true,
+        "safe_mode_enabled": false
+    }
+}
