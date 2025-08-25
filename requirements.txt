@@ -21,4 +21,4 @@ py-cpuinfo>=9.0.0
 # - Windows 10/11 (64-bit)
 # - CUDA 12.1+ (for GPU acceleration)
 # - cuDNN 8.9.7+
-# - Webcam (720p, 1080p, 2K, or 4K at 30+ FPS)
+# - Webcam (720p+/obs at 30+ FPS)
